@@ -18,12 +18,29 @@ public class FlagStandardOP{
         ConsoleColors.BROWN_BACKGROUND    // '9'
     };
 
-    // Pinta una bandera de 10 filas que empieza en filaInicio (numeración desde 1, como en el CSV)
-    static void pintarBandera(char[][] matriz, int filaInicio) {
+    // Tamaños disponibles: {filas, columnas}. Todos mantienen la proporción 2:3 de la bandera original.
+    static final String[] NOMBRES_TAMANO = { "Grande", "Mediano", "Pequeño", "Ícono" };
+    static final int[][] TAMANOS = {
+        {10, 15},  // 1. Grande (tamaño original)
+        {6, 9},    // 2. Mediano
+        {4, 6},    // 3. Pequeño
+        {2, 3}     // 4. Ícono
+    };
+
+    // Las banderas del CSV siempre son de 10 filas x 15 columnas
+    static final int FILAS_ORIGEN = 10;
+    static final int COLUMNAS_ORIGEN = 15;
+
+    // Pinta una bandera que empieza en filaInicio (numeración desde 1, como en el CSV)
+    // reducida a filasDestino x columnasDestino tomando, para cada celda nueva, la celda
+    // del centro del bloque que le corresponde en la bandera original.
+    static void pintarBandera(char[][] matriz, int filaInicio, int filasDestino, int columnasDestino) {
         System.out.println("--------------------------------");
-        for (int fila = filaInicio - 1; fila < filaInicio + 9; fila++) {
-            for (int columna = 0; columna < matriz[fila].length; columna++) {
-                char c = matriz[fila][columna];
+        for (int f = 0; f < filasDestino; f++) {
+            int filaOrigen = filaInicio - 1 + (int) ((f + 0.5) * FILAS_ORIGEN / filasDestino);
+            for (int col = 0; col < columnasDestino; col++) {
+                int colOrigen = (int) ((col + 0.5) * COLUMNAS_ORIGEN / columnasDestino);
+                char c = matriz[filaOrigen][colOrigen];
                 if (c >= '1' && c <= '9') {
                     System.out.print(COLORES[c - '1'] + "   ");
                 }
@@ -155,7 +172,31 @@ public class FlagStandardOP{
             if (inicioFila[flag - 1] == 0) {
                 System.out.println("Todavía no hay bandera cargada para " + paises[flag - 1]);
             } else {
-                pintarBandera(matriz, inicioFila[flag - 1]);
+                /* ---------- Elegir tamaño ---------- */
+                System.out.println("+------+---------------------------+");
+                System.out.println("| Num  | Tamaño                    |");
+                System.out.println("+------+---------------------------+");
+                for (int i = 0; i < NOMBRES_TAMANO.length; i++) {
+                    System.out.println("| " + (i + 1) + "\t| " + NOMBRES_TAMANO[i] + " (" + TAMANOS[i][0] + "x" + TAMANOS[i][1] + ")");
+                }
+                System.out.println("+------+---------------------------+");
+
+                int tamano = 0;
+                while (tamano < 1 || tamano > TAMANOS.length) {
+                    System.out.print("Ingresa un número de tamaño (1-" + TAMANOS.length + "): ");
+                    try {
+                        tamano = sc.nextInt();
+                        if (tamano < 1 || tamano > TAMANOS.length) {
+                            System.out.println("Inválido: debe estar entre 1 y " + TAMANOS.length);
+                        }
+                    } catch (Exception e) {
+                        System.out.println("Inválido: ingresa un número");
+                        sc.nextLine(); // limpia el buffer
+                        tamano = 0;
+                    }
+                }
+
+                pintarBandera(matriz, inicioFila[flag - 1], TAMANOS[tamano - 1][0], TAMANOS[tamano - 1][1]);
             }
             System.out.print("Salir? (s/n): ");
             char c = sc.next().charAt(0);
@@ -163,15 +204,6 @@ public class FlagStandardOP{
             salir = true;
     }
 }  while (!salir);
-
-
-
-
-
-
-
-
-
         sc.close();
 
 
