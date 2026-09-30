@@ -75,26 +75,26 @@ public class FlagStandardOP{
         int[] inicioFila = new int[paises.length];
          
             inicioFila[0]  = 61; // 1. Inglaterra
-            inicioFila[0]  = 61;// 2. España
-            inicioFila[0]  = 61;// 3. Francia
-            inicioFila[0]  = 61;// 4. Cabo Verde
-            inicioFila[0]  = 61;// 5. Arabia Saudita
-            inicioFila[0]  = 61;// 6. Corea del Sur
-            inicioFila[0]  = 61; // 7. Congo RD
-            inicioFila[0]  = 61; // 8. Ecuador
-            inicioFila[0]  = 61; // 9. Estados Unidos
-            inicioFila[0]  = 61; // 10. Argentina
-            inicioFila[0]  = 61; // 11. Brasil
-            inicioFila[0]  = 61; // 12. Canadá
-            inicioFila[0]  = 61; // 13. Costa de Marfil
-            inicioFila[0]  = 61; // 14. Jordania
-            inicioFila[0]  = 61; // 15. Alemania
-            inicioFila[0]  = 61;  // 16. Japón
-            inicioFila[0]  = 61; // 17. Colombia
-            inicioFila[0]  = 61; // 18. Bélgica
-            inicioFila[0]  = 61; // 19. Turquía
-            inicioFila[0]  = 61; // 20. Sudáfrica
-            inicioFila[0]  = 61; // 21. Chequia
+            inicioFila[1]  = 71;// 2. España
+            inicioFila[2]  = 81;// 3. Francia
+            inicioFila[3]  = 91;// 4. Cabo Verde
+            inicioFila[4]  = 271;// 5. Arabia Saudita
+            inicioFila[5]  = 101;// 6. Corea del Sur
+            inicioFila[6]  = 111; // 7. Congo RD
+            inicioFila[7]  = 121; // 8. Ecuador
+            inicioFila[8]  = 341; // 9. Estados Unidos
+            inicioFila[9]  = 291; // 10. Argentina
+            inicioFila[10]  = 321; // 11. Brasil
+            inicioFila[11]  = 381; // 12. Canadá
+            inicioFila[12]  = 301; // 13. Costa de Marfil
+            inicioFila[13]  = 371; // 14. Jordania
+            inicioFila[14]  = 131; // 15. Alemania
+            inicioFila[15]  = 161;  // 16. Japón
+            inicioFila[16]  = 191; // 17. Colombia
+            inicioFila[17]  = 141; // 18. Bélgica
+            inicioFila[18]  = 181; // 19. Turquía
+            inicioFila[19]  = 171; // 20. Sudáfrica
+            inicioFila[20]  = 151; // 21. Chequia
             inicioFila[21] = 221; // 22. Suiza
             inicioFila[22] = 241; // 23. Portugal
             inicioFila[23] = 231; // 24. Egipto
@@ -102,60 +102,79 @@ public class FlagStandardOP{
             inicioFila[25] = 201; // 26. Escocia
             inicioFila[26] = 251; // 27. Haití
             inicioFila[27] = 261; // 28. Argelia
-            inicioFila[0]  = 61; // 29. México
-            inicioFila[0]  = 61; // 30. Marruecos
-            inicioFila[0]  = 61; // 31. Austria
-            inicioFila[0]  = 61; // 32. Noruega
-            inicioFila[0]  = 61; // 33. Bosnia y Herzegovina
-            inicioFila[0]  = 61; // 34. Túnez
-            inicioFila[0]  = 61; // 35. Croacia
-            inicioFila[0]  = 61; // 36. Países Bajos
-            inicioFila[0]  = 61; // 37. Uruguay
-            inicioFila[0]  = 61; // 38. Qatar
-            inicioFila[0]  = 61; // 39. Australia
-            inicioFila[0]  = 61; // 40. Nueva Zelanda
-            inicioFila[0]  = 61; // 41. Senegal
-            inicioFila[0]  = 61; // 42. Ghana
-            inicioFila[0]  = 61; // 43. Panamá
-            inicioFila[0]  = 61; // 44. Irak
-            inicioFila[0]  = 61; // 45. Suecia
-            inicioFila[0]  = 61;  // 46. Curazao
-            inicioFila[0]  = 61;  // 47. Irán
-            inicioFila[0]  = 61;  // 48. Uzbekistán             
-
+            inicioFila[28]  = 11; // 29. México
+            inicioFila[29]  = 21; // 30. Marruecos
+            inicioFila[30]  = 1; // 31. Austria
+            inicioFila[31]  = 31; // 32. Noruega
+            inicioFila[32]  = 41; // 33. Bosnia y Herzegovina
+            inicioFila[33]  = 51; // 34. Túnez
+            inicioFila[34]  = 281; // 35. Croacia
+            inicioFila[35]  = 311; // 36. Países Bajos
+            inicioFila[36]  = 351; // 37. Uruguay
+            inicioFila[37]  = 331; // 38. Qatar
+            inicioFila[38]  = 391; // 39. Australia
+            inicioFila[39]  = 401; // 40. Nueva Zelanda
+            inicioFila[40]  = 361; // 41. Senegal
+            inicioFila[41]  = 471; // 42. Ghana
+            inicioFila[42]  = 411; // 43. Panamá
+            inicioFila[43]  = 461; // 44. Irak
+            inicioFila[44]  = 431; // 45. Suecia
+            inicioFila[45]  = 421;  // 46. Curazao
+            inicioFila[46]  = 441;  // 47. Irán
+            inicioFila[47]  = 451;  // 48. Uzbekistán     
             
-        /* ---------- Menú ---------- */
-        System.out.println("+------+---------------------------+");
-        System.out.println("| Num  | País                      |");
-        System.out.println("+------+---------------------------+");
-        for (int i = 0; i < paises.length; i++) {
-            System.out.println("| " + (i + 1) + "\t| " + paises[i]);
-        }
-        System.out.println("+------+---------------------------+");
-
-        /* ---------- Control de errores ---------- */
-        int flag = 0;
-        while (flag < 1 || flag > paises.length) {
-            System.out.print("Ingresa un número de país (1-" + paises.length + "): ");
-            try {
-                flag = sc.nextInt();
-                if (flag < 1 || flag > paises.length) {
-                    System.out.println("Inválido: debe estar entre 1 y " + paises.length);
-                }
-            } catch (Exception e) {
-                System.out.println("Inválido: ingresa un número");
-                sc.nextLine(); // limpia el buffer
-                flag = 0;
+            
+        boolean salir = false;
+        do {  
+            /* ---------- Menú ---------- */
+            System.out.println("+------+---------------------------+");
+            System.out.println("| Num  | País                      |");
+            System.out.println("+------+---------------------------+");
+            for (int i = 0; i < paises.length; i++) {
+                System.out.println("| " + (i + 1) + "\t| " + paises[i]);
             }
-        }
+            System.out.println("+------+---------------------------+");
 
-        /* ---------- Dibujar la bandera ---------- */
-        if (inicioFila[flag - 1] == 0) {
-            System.out.println("Todavía no hay bandera cargada para " + paises[flag - 1]);
-        } else {
-            pintarBandera(matriz, inicioFila[flag - 1]);
-        }
+            /* ---------- Control de errores ---------- */
+            int flag = 0;
+            while (flag < 1 || flag > paises.length) {
+                System.out.print("Ingresa un número de país (1-" + paises.length + "): ");
+                try {
+                    flag = sc.nextInt();
+                    if (flag < 1 || flag > paises.length) {
+                        System.out.println("Inválido: debe estar entre 1 y " + paises.length);
+                    }
+                } catch (Exception e) {
+                    System.out.println("Inválido: ingresa un número");
+                    sc.nextLine(); // limpia el buffer
+                    flag = 0;
+                }
+            }
+
+            /* ---------- Dibujar la bandera ---------- */
+            if (inicioFila[flag - 1] == 0) {
+                System.out.println("Todavía no hay bandera cargada para " + paises[flag - 1]);
+            } else {
+                pintarBandera(matriz, inicioFila[flag - 1]);
+            }
+            System.out.print("Salir? (s/n): ");
+            char c = sc.next().charAt(0);
+            if(c == 's'){
+            salir = true;
+    }
+}  while (!salir);
+
+
+
+
+
+
+
+
 
         sc.close();
+
+
+
     }
 }
