@@ -164,6 +164,271 @@ switch (flag) {
     System.out.println();
     }
     break;
+    //España
+    case 2:
+
+     System.out.println("--------------------------------");  
+
+    for (fila = (71)-1; fila < 80; fila++) {
+
+        for (int columna = 0; columna < matriz[fila].length; columna++) {
+
+            if(matriz[fila][columna]=='1'){
+		 			System.out.print(ConsoleColors.YELLOW_BACKGROUND+"   ");
+		 		}
+            if(matriz[fila][columna]=='2'){
+		 			System.out.print(ConsoleColors.ORANGE_BACKGROUND+"   ");
+		 		}
+            if(matriz[fila][columna]=='3'){
+		 			System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+		 		}
+            if(matriz[fila][columna]=='4'){
+		 			System.out.print(ConsoleColors.PURPLE_BACKGROUND+"   ");
+		 		}
+            if(matriz[fila][columna]=='5'){
+		 			System.out.print(ConsoleColors.BLUE_BACKGROUND+"   ");
+		 		}
+            if(matriz[fila][columna]=='6'){
+		 			System.out.print(ConsoleColors.GREEN_BACKGROUND+"   ");
+		 		}
+            if(matriz[fila][columna]=='7'){
+		 			System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+		 		}
+            if(matriz[fila][columna]=='8'){
+		 			System.out.print(ConsoleColors.BLACK_BACKGROUND+"   ");
+		 		}
+            if(matriz[fila][columna]=='9'){
+		 			System.out.print(ConsoleColors.BROWN_BACKGROUND+"   ");
+		 		}
+            System.out.print(ConsoleColors.RESET);
+        }
+
+    System.out.println();
+    }
+        break;
+
+    case 9: // Estados Unidos 
+    System.out.println("--------------------------------");  
+    for (fila = (81) - 1; fila < 90; fila++) {
+        for (int columna = 0; columna < matriz[fila].length; columna++) {
+            if (matriz[fila][columna] == '1') {
+                System.out.print(ConsoleColors.YELLOW_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '2') {
+                System.out.print(ConsoleColors.ORANGE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '3') {
+                System.out.print(ConsoleColors.RED_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '4') {
+                System.out.print(ConsoleColors.PURPLE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '5') {
+                System.out.print(ConsoleColors.BLUE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '6') {
+                System.out.print(ConsoleColors.GREEN_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '7') {
+                System.out.print(ConsoleColors.WHITE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '8') {
+                System.out.print(ConsoleColors.BLACK_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '9') {
+                System.out.print(ConsoleColors.BROWN_BACKGROUND + "   ");
+            }
+            System.out.print(ConsoleColors.RESET);
+        }
+        System.out.println();
+    }
+    break;
+
+    case 10://Argentina 
+    System.out.println("--------------------------------");  
+    for (fila = (91) - 1; fila < 100; fila++) {
+        for (int columna = 0; columna < matriz[fila].length; columna++) {
+            if (matriz[fila][columna] == '1') {
+                System.out.print(ConsoleColors.YELLOW_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '2') {
+                System.out.print(ConsoleColors.ORANGE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '3') {
+                System.out.print(ConsoleColors.RED_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '4') {
+                System.out.print(ConsoleColors.PURPLE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '5') {
+                System.out.print(ConsoleColors.BLUE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '6') {
+                System.out.print(ConsoleColors.GREEN_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '7') {
+                System.out.print(ConsoleColors.WHITE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '8') {
+                System.out.print(ConsoleColors.BLACK_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '9') {
+                System.out.print(ConsoleColors.BROWN_BACKGROUND + "   ");
+            }
+            System.out.print(ConsoleColors.RESET);
+        }
+        System.out.println();
+    }
+    break;
+
+    case 11://Brasil
+    System.out.println("--------------------------------");  
+    for (fila = (291) - 1; fila < 300; fila++) {
+        for (int columna = 0; columna < matriz[fila].length; columna++) {
+            if (matriz[fila][columna] == '1') {
+                System.out.print(ConsoleColors.YELLOW_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '2') {
+                System.out.print(ConsoleColors.ORANGE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '3') {
+                System.out.print(ConsoleColors.RED_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '4') {
+                System.out.print(ConsoleColors.PURPLE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '5') {
+                System.out.print(ConsoleColors.BLUE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '6') {
+                System.out.print(ConsoleColors.GREEN_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '7') {
+                System.out.print(ConsoleColors.WHITE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '8') {
+                System.out.print(ConsoleColors.BLACK_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '9') {
+                System.out.print(ConsoleColors.BROWN_BACKGROUND + "   ");
+            }
+            System.out.print(ConsoleColors.RESET);
+        }
+        System.out.println();
+    }
+    break;
+
+    case 12://Canada
+    System.out.println("--------------------------------");  
+    for (fila = (321) - 1; fila < 330; fila++) {
+        for (int columna = 0; columna < matriz[fila].length; columna++) {
+            if (matriz[fila][columna] == '1') {
+                System.out.print(ConsoleColors.YELLOW_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '2') {
+                System.out.print(ConsoleColors.ORANGE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '3') {
+                System.out.print(ConsoleColors.RED_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '4') {
+                System.out.print(ConsoleColors.PURPLE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '5') {
+                System.out.print(ConsoleColors.BLUE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '6') {
+                System.out.print(ConsoleColors.GREEN_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '7') {
+                System.out.print(ConsoleColors.WHITE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '8') {
+                System.out.print(ConsoleColors.BLACK_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '9') {
+                System.out.print(ConsoleColors.BROWN_BACKGROUND + "   ");
+            }
+            System.out.print(ConsoleColors.RESET);
+        }
+        System.out.println();
+    }
+    break;
+
+    case 13:// Costa de Marfil 
+    System.out.println("--------------------------------");  
+    for (fila = (311) - 1; fila < 320; fila++) {
+        for (int columna = 0; columna < matriz[fila].length; columna++) {
+            if (matriz[fila][columna] == '1') {
+                System.out.print(ConsoleColors.YELLOW_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '2') {
+                System.out.print(ConsoleColors.ORANGE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '3') {
+                System.out.print(ConsoleColors.RED_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '4') {
+                System.out.print(ConsoleColors.PURPLE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '5') {
+                System.out.print(ConsoleColors.BLUE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '6') {
+                System.out.print(ConsoleColors.GREEN_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '7') {
+                System.out.print(ConsoleColors.WHITE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '8') {
+                System.out.print(ConsoleColors.BLACK_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '9') {
+                System.out.print(ConsoleColors.BROWN_BACKGROUND + "   ");
+            }
+            System.out.print(ConsoleColors.RESET);
+        }
+        System.out.println();
+    }
+    break;
+
+    case 14://Jordania
+    System.out.println("--------------------------------");  
+    for (fila = (301) - 1; fila < 310; fila++) {
+        for (int columna = 0; columna < matriz[fila].length; columna++) {
+            if (matriz[fila][columna] == '1') {
+                System.out.print(ConsoleColors.YELLOW_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '2') {
+                System.out.print(ConsoleColors.ORANGE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '3') {
+                System.out.print(ConsoleColors.RED_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '4') {
+                System.out.print(ConsoleColors.PURPLE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '5') {
+                System.out.print(ConsoleColors.BLUE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '6') {
+                System.out.print(ConsoleColors.GREEN_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '7') {
+                System.out.print(ConsoleColors.WHITE_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '8') {
+                System.out.print(ConsoleColors.BLACK_BACKGROUND + "   ");
+            }
+            if (matriz[fila][columna] == '9') {
+                System.out.print(ConsoleColors.BROWN_BACKGROUND + "   ");
+            }
+            System.out.print(ConsoleColors.RESET);
+        }
+        System.out.println();
+    }
+    break;
+
     
     // -------------------------------------------------------------
     // Case 22: Suiza (Filas 221-230)

@@ -3,7 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Test{
+public class FlagStandardOP{
 
     // Cada carácter del CSV ('1'..'9') corresponde a una posición (0..8) de este arreglo
     static final String[] COLORES = {
@@ -73,16 +73,57 @@ public class Test{
         // Índice = número de país - 1. Valor = fila del CSV donde empieza la bandera.
         // 0 significa "todavía sin asignar".
         int[] inicioFila = new int[paises.length];
-        inicioFila[0]  = 131;  // 1  Inglaterra
-        inicioFila[21] = 221;  // 22 Suiza
-        inicioFila[22] = 241;  // 23 Portugal
-        inicioFila[23] = 231;  // 24 Egipto
-        inicioFila[24] = 211;  // 25 Paraguay
-        inicioFila[25] = 201;  // 26 Escocia
-        inicioFila[26] = 251;  // 27 Haití
-        inicioFila[27] = 261;  // 28 Argelia
-        // ... agrega aquí el resto de países cuando tengas sus filas
+         
+            inicioFila[0]  = 61; // 1. Inglaterra
+            inicioFila[0]  = 61;// 2. España
+            inicioFila[0]  = 61;// 3. Francia
+            inicioFila[0]  = 61;// 4. Cabo Verde
+            inicioFila[0]  = 61;// 5. Arabia Saudita
+            inicioFila[0]  = 61;// 6. Corea del Sur
+            inicioFila[0]  = 61; // 7. Congo RD
+            inicioFila[0]  = 61; // 8. Ecuador
+            inicioFila[0]  = 61; // 9. Estados Unidos
+            inicioFila[0]  = 61; // 10. Argentina
+            inicioFila[0]  = 61; // 11. Brasil
+            inicioFila[0]  = 61; // 12. Canadá
+            inicioFila[0]  = 61; // 13. Costa de Marfil
+            inicioFila[0]  = 61; // 14. Jordania
+            inicioFila[0]  = 61; // 15. Alemania
+            inicioFila[0]  = 61;  // 16. Japón
+            inicioFila[0]  = 61; // 17. Colombia
+            inicioFila[0]  = 61; // 18. Bélgica
+            inicioFila[0]  = 61; // 19. Turquía
+            inicioFila[0]  = 61; // 20. Sudáfrica
+            inicioFila[0]  = 61; // 21. Chequia
+            inicioFila[21] = 221; // 22. Suiza
+            inicioFila[22] = 241; // 23. Portugal
+            inicioFila[23] = 231; // 24. Egipto
+            inicioFila[24] = 211; // 25. Paraguay
+            inicioFila[25] = 201; // 26. Escocia
+            inicioFila[26] = 251; // 27. Haití
+            inicioFila[27] = 261; // 28. Argelia
+            inicioFila[0]  = 61; // 29. México
+            inicioFila[0]  = 61; // 30. Marruecos
+            inicioFila[0]  = 61; // 31. Austria
+            inicioFila[0]  = 61; // 32. Noruega
+            inicioFila[0]  = 61; // 33. Bosnia y Herzegovina
+            inicioFila[0]  = 61; // 34. Túnez
+            inicioFila[0]  = 61; // 35. Croacia
+            inicioFila[0]  = 61; // 36. Países Bajos
+            inicioFila[0]  = 61; // 37. Uruguay
+            inicioFila[0]  = 61; // 38. Qatar
+            inicioFila[0]  = 61; // 39. Australia
+            inicioFila[0]  = 61; // 40. Nueva Zelanda
+            inicioFila[0]  = 61; // 41. Senegal
+            inicioFila[0]  = 61; // 42. Ghana
+            inicioFila[0]  = 61; // 43. Panamá
+            inicioFila[0]  = 61; // 44. Irak
+            inicioFila[0]  = 61; // 45. Suecia
+            inicioFila[0]  = 61;  // 46. Curazao
+            inicioFila[0]  = 61;  // 47. Irán
+            inicioFila[0]  = 61;  // 48. Uzbekistán             
 
+            
         /* ---------- Menú ---------- */
         System.out.println("+------+---------------------------+");
         System.out.println("| Num  | País                      |");
